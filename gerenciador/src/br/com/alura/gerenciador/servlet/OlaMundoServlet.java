@@ -9,8 +9,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //nome do servlet
-@WebServlet(urlPatterns = "/nomeDoServlet")
+@WebServlet(urlPatterns = "/nomedoservlet")
 public class OlaMundoServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -21,6 +26,8 @@ public class OlaMundoServlet extends HttpServlet {
 		out.println("Olá mundo, este é o seu primeiro servlet.");
 		out.println("</body>");
 		out.println("</html>");
+		
+		System.out.println("O servlet foi chamado");
 	}
 
 }
