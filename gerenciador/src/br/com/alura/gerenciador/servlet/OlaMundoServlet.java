@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//nome do servlet
+//Mapeamento - nome do servlet
 @WebServlet(urlPatterns = "/nomedoservlet")
 public class OlaMundoServlet extends HttpServlet {
 
