@@ -1,12 +1,12 @@
 <%
-	String nomeEmpresa = "Alura";
+	String nomeEmpresa = (String) request.getAttribute("empresa");
 	System.out.println(nomeEmpresa);
 %>
 
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>Cadastro</title>
 	</head>
 	<body>
 			Empresa <%= nomeEmpresa %> cadastrada com sucesso!
